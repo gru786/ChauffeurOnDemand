@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="request driver"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_marginTop="20sp"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Id"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#000"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clientspin"
+        >
+
+    </androidx.appcompat.widget.AppCompatSpinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textSize="20dp"
+        android:hint="enter date"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter FROM_TIME in 24hr format"
+        android:textColorHint="#2B2828"
+        app:hintAnimationEnabled="true"
+        app:hintTextAppearance="@style/hinttext"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fromTime"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter TO_TIME in 24hr format"
+        android:textColorHint="#030303"
+        app:hintAnimationEnabled="true"
+        app:hintTextAppearance="@style/hinttext"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toTime"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"><TableRow>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnsubmit"
+            android:text="Submit"/>
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:shadowColor="#651FFF"
+            android:id="@+id/btncancel"/>
+    </TableRow></TableLayout>
+
+
+</LinearLayout>

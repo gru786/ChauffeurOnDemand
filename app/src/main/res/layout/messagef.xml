@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="driver"
+                android:textAllCaps="true"
+                android:id="@+id/btndriver"/>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="client"
+                android:textAllCaps="true"
+                android:id="@+id/btnclient"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinId"
+        android:layout_marginTop="15dp"></androidx.appcompat.widget.AppCompatSpinner>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:textColorHint="#000"
+        app:hintAnimationEnabled="true"
+        app:hintTextAppearance="@style/hinttext"
+        android:layout_marginTop="10dp">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msgtext"
+        android:inputType="textShortMessage"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsend"
+        android:textAllCaps="true"
+        android:text="Send"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

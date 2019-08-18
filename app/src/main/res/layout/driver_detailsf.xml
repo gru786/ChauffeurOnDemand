@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/welcome">
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add Driver_details"
+        android:id="@+id/btnadd"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="100dp"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Update Driver_details"
+        android:id="@+id/btnupdate"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Driver_details"
+        android:id="@+id/btndelete"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="View Driver_details"
+        android:id="@+id/btnview"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        />
+
+</LinearLayout>

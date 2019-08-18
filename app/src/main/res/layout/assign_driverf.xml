@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_marginTop="100dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Id"
+                android:textSize="20dp"
+
+                android:textColor="#000"
+
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ridspin"
+
+                android:scrollbars="vertical"
+
+                >
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver Id"
+                android:textSize="20dp"
+
+                android:textColor="#000"
+
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/driverspin"
+
+                android:scrollbars="vertical"
+
+                >
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+
+
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client Id"
+                android:textSize="20dp"
+
+                android:textColor="#000"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clientId"
+                android:textSize="20dp"
+
+                android:textColor="#000"
+
+                />
+
+
+
+
+
+
+
+
+
+        </TableRow>
+        <TableRow android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20dp"
+
+                android:textColor="#000"></TextView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From Time:"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtft"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Time:"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txttt"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Charge:"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcharge"
+                android:textSize="20dp"
+                android:hint="Enter charges here"
+                android:inputType="number"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsubmit"
+        android:text="Submit"/>
+
+
+
+
+</LinearLayout>

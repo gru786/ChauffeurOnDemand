@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/driver"
+            android:icon="@drawable/driver"
+            android:title="Driver Details" />
+        <item
+            android:id="@+id/client"
+            android:icon="@drawable/client2"
+            android:title="Client Details" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/feedback"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/requestDriver"
+            android:icon="@drawable/request"
+            android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/assignDriver"
+            android:icon="@drawable/request2"
+            android:title="Assign Driver" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/message"
+                android:icon="@drawable/msg2"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/call"
+                android:icon="@drawable/call"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>
